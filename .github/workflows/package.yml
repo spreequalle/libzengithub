@@ -67,6 +67,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install conan
         pip install conan_package_tools
+    - name: ARM hotfix
       run: |
         export CONAN_ARCHS=${{ matrix.python-arch }}
       if: startsWith(matrix.python-arch, 'arm')
